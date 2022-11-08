@@ -38,8 +38,16 @@ count_of=soup.find_all('sup',class_="noprint Inline-Template Template-Fact") # c
 
 
 
-print(get_citations_needed_count(count_of))
-all_para=json.dumps(get_citations_needed_report())
-for x in all_para:
-    with open ('paragrah.json',"a")as file:
-        file.write(x)
+# print(get_citations_needed_count(count_of))
+all=get_citations_needed_report()
+# print(all)
+# for a in all :
+#     pass
+
+
+print("The number of Citation needed in the The Big Bang Theory wikipedia is "+str(get_citations_needed_count(count_of)),'\n')
+n=1
+for p in all:
+    print(str(n) +'- Citation needed for '+"\""+ p +"\"",'\n')
+    n+=1
+
