@@ -44,10 +44,10 @@ all=get_citations_needed_report()
 # for a in all :
 #     pass
 
-
-print("The number of Citation needed in the The Big Bang Theory wikipedia is "+str(get_citations_needed_count(count_of)),'\n')
-n=1
-for p in all:
-    print(str(n) +'- Citation needed for '+"\""+ p +"\"",'\n')
-    n+=1
+if __name__=="__main__":
+     print("The number of Citation needed in the The Big Bang Theory wikipedia is "+str(get_citations_needed_count(count_of)),'\n')
+     n=1
+     for p in all:
+         print(str(n) +'- Citation needed for '+"\""+ p +"\"",'\n')
+         n+=1
 
